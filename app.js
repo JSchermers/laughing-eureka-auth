@@ -50,7 +50,7 @@ app.post("register", async (req, resp) => {
         user.token = token;
         user.password = undefined;
 
-        res.status(200).json(user)
+        resp.status(200).json(user)
 
         
     } catch (error) {
